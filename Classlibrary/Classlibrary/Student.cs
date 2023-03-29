@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Classlibrary
 {
-    internal class Student
+    public class Student
     {
+        private string name;
+        private string student_id;
+
+        public Student(string name,
+            string student_id)
+        {
+            this.name = name;
+            this.student_id = student_id;
+        }
+        public string displayInfo()
+        {
+            return student_id + "," + name + Environment.NewLine;
+        }
     }
 }
